@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanvi Maurya's Homepage</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            color: #333;
+            background-image: url('https://images.unsplash.com/photo-1508615039623-a25605d2b022?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-weight: 500;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #222;
+        }
+
+        .header-links {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .header-links a {
+            text-decoration: none;
+            color: #444;
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 10px 24px;
+            border-radius: 25px;
+            font-weight: 500;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+
+        .header-links a:hover {
+            background-color: #fff;
+            transform: translateY(-2px);
+        }
+
+        .main-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 24px;
+            padding: 50px;
+            max-width: 800px;
+            width: 90%;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        .profile-section {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        @media (max-width: 650px) {
+            .profile-section {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        .profile-pic {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid white;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            flex-shrink: 0;
+            background-color: #eee;
+        }
+
+        .bio-content h2 {
+            margin-top: 0;
+            font-size: 1.8rem;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        .bio-content p {
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .bio-content ul {
+            padding-left: 20px;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 25px;
+            text-align: left;
+        }
+
+        .resume-btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background-color: #a45a42;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+            box-shadow: 0 4px 10px rgba(164, 90, 66, 0.3);
+        }
+
+        .resume-btn:hover {
+            background-color: #8c4a35;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to Sanvi Maurya's Homepage</h1>
+
+    <div class="header-links">
+        <a href="https://leetcode.com/u/Khushi_M1703/" target="_blank">LeetCode</a>
+        <a href="https://www.codechef.com/users/skmaurya17" target="_blank">CodeChef</a>
+        <a href="https://codolio.com/profile/S_k_Maurya" target="_blank">Codolio</a>
+        <a href="https://github.com/sanvimaurya4-web" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/sanvi-maurya" target="_blank">LinkedIn</a>
+    </div>
+
+    <div class="main-card">
+        <div class="profile-section">
+            <img src="profile.jpeg" alt="Sanvi Maurya" class="profile-pic">
+
+            <div class="bio-content">
+                <h2>About Me</h2>
+                <p>I am a Computer Science Engineering undergraduate at NIT Raipur (2025-2029). I am highly motivated with a strong passion for Artificial Intelligence, Robotics, and Computer Vision. I am eager to leverage my skills to address real-world challenges through innovative technical projects.</p>
+                
+                <ul>
+                    <li><strong>2-Star</strong> CodeChef Coder</li>
+                    <li><strong>Languages:</strong> Python, C , C++, Java</li>
+                    <li><strong>Libraries:</strong> OpenCV, NumPy, PyTorch</li>
+                    <li><strong>Technical skills:</strong> HTML, CSS , Js , Database</li>
+                </ul>
+                
+                <a href="resume.pdf" class="resume-btn" target="_blank">View Full Resume ↗</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
